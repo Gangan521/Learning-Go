@@ -1,10 +1,6 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
+import "fmt"
 
 // func main() {
 // 	// 类型转换
@@ -22,9 +18,18 @@ import (
 // 	fmt.Printf("整数为：%d，浮点数为：%d\n", x, y)
 // }
 
+// func main() {
+// 	//bufio包读取终端输入内容
+// 	fmt.Println("请输入一个字符串：")
+// 	reader := bufio.NewReader(os.Stdin)
+// 	s1, _ := reader.ReadString('\n')
+// 	fmt.Println("读取到的数据为：", s1)
+// }
+
 func main() {
-	fmt.Println("请输入一个字符串：")
-	reader := bufio.NewReader(os.Stdin)
-	s1, _ := reader.ReadString('\n')
-	fmt.Println("读取到的数据为：", s1)
+	var a int = 10
+	if a < 20 {
+		fmt.Printf("a 小于 20\n")
+	}
+	fmt.Printf("a 的值为 ： %d\n", a)
 }
